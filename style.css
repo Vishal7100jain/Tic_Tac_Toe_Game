@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    background-color: rgb(30, 92, 67);
+    background-color: rgb(22, 254, 159);
 }
 
 body {
@@ -18,21 +18,21 @@ body {
 }
 
 .square {
-    background-color: rgb(63, 66, 63);
+    background-color: rgb(232, 147, 255);
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
-    font-size: 4em;
+    height: 80px;
+    font-size: 3em;
     font-weight: bold;
-    border: 1px solid #ccc;
     cursor: pointer;
-    box-shadow: 5px 5px 5px red;
-    margin: 5px;
+    box-shadow: 7px 7px 3px rgb(73, 67, 67);
+    margin: 4px;
+    border-radius: 10px;
 }
 
 .square:hover {
-    background-color: #f1f1f1;
+    background-color: rgb(198, 81, 231);
     cursor: pointer;
 }
 

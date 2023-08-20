@@ -40,10 +40,10 @@ boxes.forEach(box => {
         box.innerHTML = turn;
         CheckWin()
         if (box.innerHTML == "X") {
-            box.style.color = "rgba(249, 5, 5, 0.76)"
+            box.style.color = "rgba(0, 0, 0, 0.76)"
         }
         else if (box.innerHTML == "0") {
-            box.style.color = "rgba(35, 35, 240, 0.77)"
+            box.style.color = "white"
         }
         turn = changeturn()
         Restartbtn.addEventListener('click', () => {
