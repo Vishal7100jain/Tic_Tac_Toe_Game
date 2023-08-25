@@ -1,6 +1,5 @@
 let boxes = document.querySelectorAll('.square')
 let Restartbtn = document.getElementById('restartbtn')
-console.log("vishal")
 let turn = "X"
 let tingSound = new Audio("ting.mp3")
 let GameOver = new Audio("gameover.mp3")
@@ -48,8 +47,7 @@ boxes.forEach(box => {
         turn = changeturn()
         Restartbtn.addEventListener('click', () => {
             box.innerHTML = "";
-            document.getElementById('dancing-bubu').style.width = "0em" 
-            document.querySelector('.board').style.paddingTop = "7em"
+            document.getElementById('dancing-bubu').style.width = "0em"
             Music.pause()
         })
     })

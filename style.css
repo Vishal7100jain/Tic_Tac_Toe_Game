@@ -7,6 +7,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    height: 100vh;
 }
 
 .board {
@@ -14,7 +18,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     width: 300px;
     margin: 0 auto;
-    padding-top: 7em;
+    align-items: center;
 }
 
 .square {
@@ -39,7 +43,7 @@ body {
 #restart {
     display: grid;
     justify-content: center;
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 #restartbtn {
@@ -47,12 +51,11 @@ body {
     width: 5em;
     background-color: rgb(99, 99, 212);
     border: 1px solid rgb(99, 99, 212);
-    border-radius: 25%;
     font-size: larger;
     font-weight: bold;
 }
 
-#restartbtn:hover{
+#restartbtn:hover {
     background-color: rgba(99, 99, 212, 0.774);
     border: 1px solid rgb(99, 99, 212, 0.774);
     cursor: pointer;
@@ -61,8 +64,19 @@ body {
 #cat {
     display: grid;
     justify-content: center;
+    position: absolute;
 }
 
 #dancing-bubu {
     width: 0em;
+}
+
+body::after {
+    content: "";
+    width: 5px;
+    height: 250px;
+    background-color: rgb(237, 232, 232);
+    display: flex;
+    position: absolute;
+    transform: rotate(90deg);
 }
